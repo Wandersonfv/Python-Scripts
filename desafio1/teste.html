@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Django</title>
+</head>
+<body>
+    <h1>Livros</h1>
+    <ul>
+        {% for livro in livros %}
+            <li>{{ livro.titulo }} - {{ livro.autor.nome }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
